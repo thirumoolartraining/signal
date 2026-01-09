@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Layout } from "@/components/layout/Layout";
 
 // Error boundary component for the form
 class FormErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean }> {
@@ -167,31 +166,29 @@ const Proposal = () => {
 
   if (isSubmitted) {
     return (
-      <Layout>
-        <section className="section-padding bg-section-primary min-h-[70vh] flex items-center">
-          <div className="container-editorial">
-            <div className="max-w-2xl">
-              <span className="caption text-muted-foreground opacity-0 animate-fade-up">
-                Inquiry Received
-              </span>
-              <h1 className="headline-hero mt-6 opacity-0 animate-fade-up animate-delay-100">
-                Thank you.
-              </h1>
-              <p className="body-large text-muted-foreground mt-8 opacity-0 animate-fade-up animate-delay-200">
-                We've received your inquiry and will review it carefully. If there's alignment, we'll be in touch within 3–5 business days.
-              </p>
-              <p className="body-base text-muted-foreground mt-6 opacity-0 animate-fade-up animate-delay-300">
-                We respond to every submission personally.
-              </p>
-            </div>
+      <section className="section-padding bg-section-primary min-h-[70vh] flex items-center">
+        <div className="container-editorial">
+          <div className="max-w-2xl">
+            <span className="caption text-muted-foreground opacity-0 animate-fade-up">
+              Inquiry Received
+            </span>
+            <h1 className="headline-hero mt-6 opacity-0 animate-fade-up animate-delay-100">
+              Thank you.
+            </h1>
+            <p className="body-large text-muted-foreground mt-8 opacity-0 animate-fade-up animate-delay-200">
+              We've received your inquiry and will review it carefully. If there's alignment, we'll be in touch within 3–5 business days.
+            </p>
+            <p className="body-base text-muted-foreground mt-6 opacity-0 animate-fade-up animate-delay-300">
+              We respond to every submission personally.
+            </p>
           </div>
-        </section>
-      </Layout>
+        </div>
+      </section>
     );
   }
 
   return (
-    <Layout>
+    <>
       {/* Hero */}
       <section className="section-padding bg-section-primary">
         <div className="container-editorial">
@@ -507,7 +504,7 @@ const Proposal = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

@@ -1,5 +1,4 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Layout } from "@/components/layout/Layout";
 import { getCaseStudy, getRelatedCaseStudies } from "@/data/caseStudies";
 
 const insightTitles: Record<string, string> = {
@@ -27,7 +26,7 @@ const CaseStudy = () => {
   ];
 
   return (
-    <Layout>
+    <>
       {/* Header */}
       <section className="section-padding bg-section-primary">
         <div className="container-editorial">
@@ -142,7 +141,7 @@ const CaseStudy = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

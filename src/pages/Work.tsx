@@ -1,10 +1,9 @@
-import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { caseStudies } from "@/data/caseStudies";
 
 const Work = () => {
   return (
-    <Layout>
+    <>
       {/* Hero */}
       <section className="section-padding">
         <div className="container-editorial">
@@ -106,7 +105,7 @@ const Work = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
