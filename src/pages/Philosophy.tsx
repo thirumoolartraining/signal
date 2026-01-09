@@ -1,4 +1,3 @@
-import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 
 const beliefs = [
@@ -31,7 +30,7 @@ const beliefs = [
 
 const Philosophy = () => {
   return (
-    <Layout>
+    <>
       {/* Hero */}
       <section className="section-padding">
         <div className="container-editorial">
@@ -92,7 +91,7 @@ const Philosophy = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
