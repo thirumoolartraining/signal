@@ -9,6 +9,7 @@ import Philosophy from "./pages/Philosophy";
 import Work from "./pages/Work";
 import CaseStudy from "./pages/CaseStudy";
 import Insights from "./pages/Insights";
+import InsightDetail from "./pages/InsightDetail";
 import Proposal from "./pages/Proposal";
 import NotFound from "./pages/NotFound";
 
@@ -73,6 +74,17 @@ const App = () => (
                 description="Thoughts and perspectives on digital strategy, design, and technology."
               >
                 <Insights />
+              </Layout>
+            }
+          />
+          <Route
+            path="/insights/:slug"
+            element={
+              <Layout
+                title="Insight — SIGNAL"
+                description="An in-depth look at our strategic thinking and insights."
+              >
+                <InsightDetail />
               </Layout>
             }
           />
